@@ -1,7 +1,7 @@
 # CMPS 2200 Assignment 01
 ## Answers
 
-**Name:**_________________________
+**Name:** Nahema Dumontei
 
 
 Place all written answers from `assignment-01.md` here for easier grading.
@@ -9,25 +9,27 @@ Place all written answers from `assignment-01.md` here for easier grading.
 1. **Asymptotic notation** #on paper/separate pdf
 
   - 1b (2 pts): 
- 
+ on separate paper/pdf
   - 1c (2 pts): 
-
+//
   - 1d (2 pts):
-
+//
   - 1e (2 pts):
-
+//
   - 1f (2 pts):
-
+//
   - 1g (2 pts):
-
+//
 2. **SPARC to Python**
 
   - 2b (3 pts): 
+
   This function calculates the Fibonacci sequence. The input x represents the index f(x). It calculates the number at index x by adding the two previous numbers. However, to get those previous numbers, it has to go all the way back to the base cases where x=1 or x=0 working its way back up to the inputted x by calculating the values. 
 
 3. **Parallelism and recursion**
 
   - 3b (4 pts):
+
   Since the longest_run is a iterative and sequential function using a single for loop, there is no parallelism. Because of this, its Work and Span are mathematically the same. 
 
   Work would be $\Theta$(n) because it iterates throught the whole list exaclty once, that has n items in it. 
@@ -42,5 +44,6 @@ Place all written answers from `assignment-01.md` here for easier grading.
   If the Span is ran sequentially then it would be $\Theta$(n) because one half would have to wait for the other hald to go. 
 
   - 3e (5 pts):
-The work would still be $\Theta$(n), because the work calculates the total number of operartions that happen across all threads combined, and that stays the same as before (3d)
-Now, the Span, if it does run in parallel then we would get the $\Theta$(log(n)) because we would only be calculating the longest "one way/ single path" from top to bottom of the tree, since all the divisions would be running in their own thread at the same time. 
+
+  The work would still be $\Theta$(n), because the work calculates the total number of operartions that happen across all threads combined, and that stays the same as before (3d)
+  Now, the Span, if it does run in parallel then we would get the $\Theta$(log(n)) because we would only be calculating the longest "one way/ single path" from top to bottom of the tree, since all the divisions would be running in their own thread at the same time. 
